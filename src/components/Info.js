@@ -9,8 +9,14 @@ const Grid = styled.div`
   grid-gap: 5em;
   padding-left: 1.5em;
 `
+const HeaderInfoGrid = styled.div`
+  display: Grid;
+  font-weight: 900;
+  font-size: 20px;
+`
 const InfoGrid = styled.div`
   display: Grid;
+  font-size: 20px;
 `
 
 const Picture = styled.img`
@@ -52,14 +58,28 @@ class Info extends React.Component {
         <Picture src={Myface} alt="" />
         <HeaderInfo>Info
           <Line />
-            <div className='modal-body row'>
-              <InfoGrid className='col-md-6'>
-              sdlm;f;ldm
+          <div className='modal-body row'>
+            <HeaderInfoGrid className='col-md-3'>
+              Name : <br />
+              Nickname :  <br />
+              Age :  <br />
+              Study : <br />
+              </HeaderInfoGrid>
+            <InfoGrid className='col-md-3'>
+              Worawat Chueajedton <br />
+              Aomsin  <br />
+              20  <br />
+              Kasetsaet University  <br />
               </InfoGrid>
-              <InfoGrid className='col-md-6'>
-              sdlm;f;ldm
+            <HeaderInfoGrid className='col-md-3'>
+              Nationality : <br />
+              Bloodtype : <br />
+              </HeaderInfoGrid>
+            <InfoGrid className='col-md-3'>
+              Thai <br />
+              O <br />
               </InfoGrid>
-            </div>
+          </div>
         </HeaderInfo>
       </Grid>
     );
